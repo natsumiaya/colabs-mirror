@@ -1,8 +1,8 @@
 "use client";
 import { FC } from "react";
 import ButtonArrow from "../ButtonArrow";
-import ParallaxComponent from "../ParallaxComponent";
 import styles from "./index.module.css";
+import ClientJarallax from "../ParallaxComponent/client_index";
 
 type LinkCardProps = {
   url: string;
@@ -24,7 +24,7 @@ const LinkCard: FC<LinkCardProps> = ({ url, title, image }) => {
         </div>
       </div>
 
-      <ParallaxComponent image="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/dragonfly-1.jpg"></ParallaxComponent>
+      <ClientJarallax image="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/dragonfly-1.jpg"></ClientJarallax>
     </div>
   );
 };
