@@ -2,7 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 import styles from "./index.module.css";
 import { formatTitleToLowerCase } from "@/app/utils/formatter";
-import ButtonArrow from "../ButtonArrow";
+import ButtonArrow from "../../Common/ButtonArrow";
 
 type blogPost = {
   title: string;

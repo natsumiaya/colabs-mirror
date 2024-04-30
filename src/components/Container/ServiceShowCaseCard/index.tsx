@@ -3,8 +3,8 @@ import { FC } from "react";
 import styles from "./index.module.css";
 
 import { formatTitleToLowerCase } from "@/app/utils/formatter";
-import CircleImageCard from "../../CircleImageCard";
-import ButtonArrow from "@/components/ButtonArrow";
+import CircleImageCard from "../../Common/CircleImageCard";
+import ButtonArrow from "@/components/Common/ButtonArrow";
 
 type showCaseCardType = {
   title: string;
@@ -36,7 +36,6 @@ const ServiceShowCaseCard: FC<showCaseCardType> = async ({
           href={`https://colabs.com.au/services/${formatTitleToLowerCase(
             title
           )}`}
-          type="light"
           target="_blank"
           referrerPolicy="no-referrer"
           spanText="Learn More"

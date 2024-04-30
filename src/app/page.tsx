@@ -1,6 +1,6 @@
 import styles from "./page.module.css";
 
-import ButtonArrow from "@/components/ButtonArrow";
+import ButtonArrow from "@/components/Common/ButtonArrow";
 
 import {
   blog_data,
@@ -13,48 +13,48 @@ import {
 import LeftCorner from "@/assets/icons/left-corner.svg";
 import RightCorner from "@/assets/icons/right-corner.svg";
 import ArrowIcon from "@/assets/icons/arrow";
-import ServiceShowCaseCard from "@/components/ServiceSection/ServiceShowCaseCard";
+import ServiceShowCaseCard from "@/components/Container/ServiceShowCaseCard";
 import { formatTitleToLowerCase } from "./utils/formatter";
-import CircleImageCard from "@/components/CircleImageCard";
-import BlogShowCaseCard from "@/components/BlogShowCaseCard";
-import SubscribeSection from "@/components/SubscribeSection";
+import CircleImageCard from "@/components/Common/CircleImageCard";
+import BlogShowCaseCard from "@/components/Container/BlogShowCaseCard";
+import SubscribeSection from "@/components/Container/SubscribeSection";
 import dynamic from "next/dynamic";
 
-const Jarallax = dynamic(() => import("@/components/ParallaxComponent"), {
+const Jarallax = dynamic(() => import("@/components/Common/ParallaxComponent"), {
   ssr: false,
 });
 const BlogContentSlider = dynamic(
-  () => import("@/components/BlogSliderSection/BlogContentSlider"),
+  () => import("@/components/Container/BlogContentSlider"),
   {
     ssr: false,
   }
 );
 const BlogImageSlider = dynamic(
-  () => import("@/components/BlogSliderSection/ImageSlider"),
+  () => import("@/components/Container/ImageSlider"),
   {
     ssr: false,
   }
 );
 const CommunitySummaryCard = dynamic(
-  () => import("@/components/CommunitySummaryCard"),
+  () => import("@/components/Container/CommunitySummaryCard"),
   {
     ssr: false,
   }
 );
 const LinkCards = dynamic(
-  () => import("@/components/LinkCards"),
+  () => import("@/components/Common/LinkCards"),
   {
     ssr: false,
   }
 );
 const SwiperServiceShowcase = dynamic(
-  () => import("@/components/ServiceSection/SwiperServiceShowcase"),
+  () => import("@/components/Container/SwiperServiceShowcase"),
   {
     ssr: false,
   }
 );
 const FlickerStats = dynamic(
-  () => import("@/components/StatisticSection/FlickerStats"),
+  () => import("@/components/Container/FlickerStats"),
   {
     ssr: false,
   }

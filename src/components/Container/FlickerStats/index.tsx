@@ -1,7 +1,7 @@
 "use client";
 import { FC, useEffect } from "react";
 import Flickity from "flickity";
-import StatisticCards from "@/components/StatisticSection/StatisticCards";
+import StatisticCards from "@/components/Container/StatisticCards";
 
 type statsProps = {
   data: any[]

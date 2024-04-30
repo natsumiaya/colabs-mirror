@@ -2,7 +2,7 @@
 import { FC, useState } from "react";
 import styles from "./index.module.css";
 import { menuItem, socialItem } from "./header_data";
-import { SvgWrapper } from "../IconWrapper";
+import { SvgWrapper } from "@/components/Common/IconWrapper";
 
 
 import Corner from "@/assets/icons/right-corner.svg";

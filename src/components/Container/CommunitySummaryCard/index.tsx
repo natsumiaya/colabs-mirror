@@ -2,7 +2,7 @@
 import { FC, useEffect } from "react";
 import Flickity from "flickity";
 
-import ButtonArrow from "../ButtonArrow";
+import ButtonArrow from "../../Common/ButtonArrow";
 
 type communitySummaryCardProps = {
   data: any[];

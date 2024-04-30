@@ -1,9 +1,9 @@
 import { FC } from "react";
 import styles from "./index.module.css";
-import ButtonArrow from "../ButtonArrow";
+import ButtonArrow from "../../Common/ButtonArrow";
 import dynamic from "next/dynamic";
 
-const Jarallax = dynamic(() => import('@/components/ParallaxComponent'), {
+const Jarallax = dynamic(() => import('@/components/Common/ParallaxComponent'), {
   ssr: false,
 });
 
