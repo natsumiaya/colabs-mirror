@@ -1,0 +1,14 @@
+.swiper_cards {
+  width: 40% !important;
+  display: flex;
+  border-radius: 30px;
+}
+
+@media (max-width: 500px) {
+    .swiper_cards {
+        width: 100% !important;
+    }
+    .swiper_cards:hover {
+        translate: 0;
+    }
+}

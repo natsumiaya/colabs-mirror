@@ -1,0 +1,275 @@
+.service-lab-space {
+    background-color: #0046c7
+}
+
+.service-innovation-facilitation {
+    background-color: #b1653b
+}
+
+.service-office-space {
+    background-color: #5757a5
+}
+
+.service-build-a-lab {
+    background-color: #66662a
+}
+
+.category-news {
+    background-color: #bfb9e3
+}
+
+.category-thoughts {
+    background-color: #d9db4d
+}
+
+.category-beyond-the-bench {
+    background-color: #32c58b
+}
+
+.category-lab-updates {
+    background-color: #dcb688
+}
+
+.category-resources {
+    background-color: #d9db4d
+}
+
+.category-members {
+    background-color: #fff
+}
+
+:where(:not(html,iframe,canvas,img,svg,video,audio):not(svg *,symbol *)) {
+    all: unset;
+    display: revert
+}
+
+*,:after,:before {
+    box-sizing: border-box
+}
+
+a,button {
+    cursor: pointer
+}
+
+menu,ul {
+    list-style: none
+}
+
+img {
+    max-width: 100%
+}
+
+table {
+    border-collapse: collapse
+}
+
+input,textarea {
+    -webkit-user-select: auto
+}
+
+textarea {
+    white-space: revert
+}
+
+meter {
+    -webkit-appearance: revert;
+    -moz-appearance: revert;
+    appearance: revert
+}
+
+::placeholder {
+    color: unset
+}
+
+:where([hidden]) {
+    display: none
+}
+
+:where([contenteditable]:not([contenteditable=false])) {
+    -moz-user-modify: read-write;
+    -webkit-user-modify: read-write;
+    overflow-wrap: break-word;
+    -webkit-line-break: after-white-space;
+    -webkit-user-select: auto
+}
+
+:where([draggable=true]) {
+    -webkit-user-drag: element
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.15;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    background: #f9f8f6
+}
+
+*,body {
+    position: relative;
+    box-sizing: border-box;
+    outline: none
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+html.has-scroll-smooth {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+main>section {
+    margin: 80px 0;
+    font-size: clamp(1rem,.886rem + .36vw,1.25rem)
+}
+
+main>section:first-of-type[class*=Content] {
+    padding-top: 150px
+}
+
+main>section[class*=SearchResults]~article,main>section[class*=SearchResults]~section {
+    display: none
+}
+
+main>section[class*=Subscribe]+footer {
+    margin-top: -150px
+}
+
+main>section[class*=Cta]+footer {
+    margin-top: -70px
+}
+
+main>section[class*=CtaGrid]+section[class*=BlogSlider] {
+    margin-top: -150px
+}
+
+main>section[class*=Content]+section[class*=ServicesShowcase] {
+    margin-top: 0
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    max-width: 1800px;
+    padding: 0 40px
+}
+
+.container.narrow {
+    max-width: 1700px;
+    padding: 0 80px
+}
+
+h1,h2,h3,h4,h5,h6 {
+    line-height: 1.1;
+    letter-spacing: -.05em
+}
+
+h3,h4,h5 {
+    font-weight: 600
+}
+
+.h1,h1 {
+    font-size: clamp(2.625rem,2.114rem + 1.64vw,3.75rem)
+}
+
+.h1.large,h1.large {
+    font-size: clamp(4.375rem,4.091rem + .91vw,5rem);
+    font-weight: 600
+}
+
+.h1.xlarge,h1.xlarge {
+    font-size: clamp(5rem,3.722rem + 4.09vw,7.813rem)
+}
+
+h2 {
+    font-size: clamp(2.125rem,1.557rem + 1.82vw,3.375rem)
+}
+
+h3 {
+    font-size: clamp(1.75rem,1.182rem + 1.82vw,3rem)
+}
+
+h4 {
+    font-size: clamp(1.5rem,1.159rem + 1.09vw,2.25rem)
+}
+
+h5 {
+    font-size: clamp(1.313rem,1.17rem + .45vw,1.625rem)
+}
+
+.pill {
+    display: inline-flex;
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    font-size: 16px
+}
+
+.pill.large {
+    padding: 10px 20px
+}
+
+.pill.xLarge {
+    padding: 15px 25px;
+    font-size: 22px;
+    border-radius: 30px
+}
+
+.service-blue {
+    background-color: #bed2f5
+}
+
+.service-orange {
+    background-color: #dcb688
+}
+
+.service-green {
+    background-color: #d9db4d
+}
+
+@media(max-width: 1024px) {
+    .container,.container.narrow {
+        padding:0 20px
+    }
+}
+
+@media(max-width: 500px) {
+    main>section {
+        margin:40px 0
+    }
+
+    main>section:first-of-type[class*=Content] {
+        padding-top: 100px
+    }
+
+    main>section[class*=Subscribe]+footer {
+        margin-top: -70px
+    }
+
+    main>section[class*=Cta]+footer {
+        margin-top: -30px
+    }
+
+    main>section[class*=CtaGrid]+section[class*=BlogSlider] {
+        margin-top: -70px
+    }
+
+    .container,.container.narrow {
+        padding: 0 10px
+    }
+
+    .pill {
+        padding: 4px 14px
+    }
+
+    .pill,.pill.xLarge {
+        font-size: 18px
+    }
+}
+  

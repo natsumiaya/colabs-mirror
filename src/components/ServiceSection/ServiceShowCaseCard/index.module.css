@@ -1,0 +1,49 @@
+.showcase_inside {
+  width: 100%;
+  display: flex;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.showcase_inside > a {
+  display: block;
+  width: 100%;
+  padding: 20px 30px;
+}
+
+.showcase_inside > a > span {
+  width: 100%;
+}
+
+.showcase_inside h4 {
+  color: #fff;
+  max-width: 220px;
+  height: 40px;
+  z-index: 1;
+}
+
+.showcase_inside:hover {
+    translate: 0 -5px;
+}
+
+.showcase_image {
+  width: 60%;
+  margin: -40px auto auto;
+  -webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+}
+
+.showcase_button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@media (max-width: 500px) {
+  .showcase_inside h4 {
+    max-width: 140px;
+  }
+  .showcase_image {
+    width: 90%;
+    margin: -30px auto 10px;
+  }
+}
