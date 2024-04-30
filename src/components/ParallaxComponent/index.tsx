@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useEffect, PropsWithChildren, FC } from "react";
 
 import { jarallax } from "jarallax";

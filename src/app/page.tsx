@@ -1,10 +1,6 @@
 import styles from "./page.module.css";
 
 import ButtonArrow from "@/components/ButtonArrow";
-import FlickerStats from "@/components/StatisticSection/FlickerStats";
-import LinkCard from "@/components/LinkCards";
-import CommunitySummaryCard from "@/components/CommunitySummaryCard";
-import SwiperServiceShowcase from "@/components/ServiceSection/SwiperServiceShowcase";
 
 import {
   blog_data,
@@ -20,12 +16,49 @@ import ArrowIcon from "@/assets/icons/arrow";
 import ServiceShowCaseCard from "@/components/ServiceSection/ServiceShowCaseCard";
 import { formatTitleToLowerCase } from "./utils/formatter";
 import CircleImageCard from "@/components/CircleImageCard";
-import ClientJarallax from "@/components/ParallaxComponent/client_index";
-import BlogImageSlider from "@/components/BlogSliderSection/ImageSlider";
-import BlogContentSlider from "@/components/BlogSliderSection/BlogContentSlider";
 import BlogShowCaseCard from "@/components/BlogShowCaseCard";
 import SubscribeSection from "@/components/SubscribeSection";
+import dynamic from "next/dynamic";
 
+const Jarallax = dynamic(() => import("@/components/ParallaxComponent"), {
+  ssr: false,
+});
+const BlogContentSlider = dynamic(
+  () => import("@/components/BlogSliderSection/BlogContentSlider"),
+  {
+    ssr: false,
+  }
+);
+const BlogImageSlider = dynamic(
+  () => import("@/components/BlogSliderSection/ImageSlider"),
+  {
+    ssr: false,
+  }
+);
+const CommunitySummaryCard = dynamic(
+  () => import("@/components/CommunitySummaryCard"),
+  {
+    ssr: false,
+  }
+);
+const LinkCards = dynamic(
+  () => import("@/components/LinkCards"),
+  {
+    ssr: false,
+  }
+);
+const SwiperServiceShowcase = dynamic(
+  () => import("@/components/ServiceSection/SwiperServiceShowcase"),
+  {
+    ssr: false,
+  }
+);
+const FlickerStats = dynamic(
+  () => import("@/components/StatisticSection/FlickerStats"),
+  {
+    ssr: false,
+  }
+);
 export default function Home() {
   return (
     <main>
@@ -55,7 +88,7 @@ export default function Home() {
             <div className={styles.details_container}>
               <FlickerStats data={statistic_data} />
               <div className={styles.home_links}>
-                <LinkCard
+                <LinkCards
                   url="/contact"
                   title="Join the Lab"
                   image="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/dragonfly-1.jpg"
@@ -152,7 +185,7 @@ export default function Home() {
                     <h4>{datum.title}</h4>
                     <div className={styles.cta_image_container}>
                       {index > 0 ? (
-                        <ClientJarallax
+                        <Jarallax
                           image={datum.image}
                           className={styles.cta_image}
                         />

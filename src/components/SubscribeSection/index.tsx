@@ -1,7 +1,11 @@
 import { FC } from "react";
 import styles from "./index.module.css";
 import ButtonArrow from "../ButtonArrow";
-import ClientJarallax from "../ParallaxComponent/client_index";
+import dynamic from "next/dynamic";
+
+const Jarallax = dynamic(() => import('@/components/ParallaxComponent'), {
+  ssr: false,
+});
 
 type subscribeProps = {
   image: string;
@@ -12,7 +16,7 @@ const SubscribeSection: FC<subscribeProps> = ({ image }) => {
     <section className={styles.subscribe_section}>
       <div className={`container ${styles.subscribe_container}`}>
         <div className={styles.subscribe_image}>
-          <ClientJarallax image={image}></ClientJarallax>
+          <Jarallax image={image}></Jarallax>
         </div>
         <div className={styles.subscribe_main}>
           <h3>

@@ -1,8 +1,12 @@
 "use client";
+import dynamic from "next/dynamic";
 import { FC } from "react";
 import ButtonArrow from "../ButtonArrow";
 import styles from "./index.module.css";
-import ClientJarallax from "../ParallaxComponent/client_index";
+
+const Jarallax = dynamic(() => import('../ParallaxComponent'), {
+  ssr: false,
+});
 
 type LinkCardProps = {
   url: string;
@@ -24,7 +28,7 @@ const LinkCard: FC<LinkCardProps> = ({ url, title, image }) => {
         </div>
       </div>
 
-      <ClientJarallax image="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/dragonfly-1.jpg"></ClientJarallax>
+      <Jarallax image="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/dragonfly-1.jpg"></Jarallax>
     </div>
   );
 };
