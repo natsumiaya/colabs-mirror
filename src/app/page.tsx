@@ -84,6 +84,7 @@ export default function Home() {
           <SwiperServiceShowcase>
             {service_showcase_data.map((datum, index) => (
               <ServiceShowCaseCard
+                key={`service-showcase-card-${index}`}
                 title={datum.title}
                 className={`service-${formatTitleToLowerCase(datum.title)}`}
                 image={`serviceShowcase/${index + 1}.jpg`}
@@ -141,7 +142,7 @@ export default function Home() {
         <div className="container">
           <div className={styles.ctas}>
             {principle_data.map((datum, index) => (
-              <div className={styles.cta}>
+              <div className={styles.cta} key={`principles-${index}`}>
                 <a
                   href={datum.link}
                   target="_blank"
@@ -194,7 +195,11 @@ export default function Home() {
                 <BlogContentSlider data={blog_data} />
               </div>
               <div className={styles.blog_slider_button}>
-                <ButtonArrow href={blog_data[0].uri} type="dark" spanText="Read More" />
+                <ButtonArrow
+                  href={blog_data[0].uri}
+                  type="dark"
+                  spanText="Read More"
+                />
               </div>
             </div>
           </div>
