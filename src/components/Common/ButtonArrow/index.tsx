@@ -11,6 +11,7 @@ type ArrowButtonProps = AnchorHTMLAttributes<HTMLAnchorElement> & {
   spanText?: string;
   className?: string;
   spanTextColor?: string;
+  onClick?: () => void
 };
 
 const ButtonArrow: FC<ArrowButtonProps> = ({
@@ -20,6 +21,7 @@ const ButtonArrow: FC<ArrowButtonProps> = ({
   spanText,
   className,
   spanTextColor = "#000",
+  onClick,
   ...props
 }) => {
   const renderButton = () => {
@@ -50,6 +52,7 @@ const ButtonArrow: FC<ArrowButtonProps> = ({
               styles.arrow_container
             }`}
             title={title}
+            onClick={onClick}
             {...props}
           >
             {renderButton()}
@@ -59,6 +62,7 @@ const ButtonArrow: FC<ArrowButtonProps> = ({
             className={`${type === "light" ? styles.button_light : ""} ${
               styles.arrow_container
             }`}
+            onClick={onClick}
           >
             {renderButton()}
           </div>

@@ -23,7 +23,7 @@ const BlogShowCaseCard: FC<blogPost> = ({
 }) => {
   return (
     <div className={styles.blog_tile}>
-      <a href={url} referrerPolicy="no-referrer" target="_blank">
+      <a href={`https://colabs.com.au/${url}`} referrerPolicy="no-referrer" target="_blank">
         <span>
           <div className={styles.blog_tile_image}>
             <span
