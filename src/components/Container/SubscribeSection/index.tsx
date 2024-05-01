@@ -29,6 +29,7 @@ const SubscribeSection: FC<subscribeProps> = ({ image }) => {
                 spanText="Subscribe"
                 title="Subscribe"
                 className={styles.subscribe_button}
+                spanTextColor="#fff"
               ></ButtonArrow>
             </form>
           </div>
