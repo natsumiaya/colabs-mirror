@@ -10,18 +10,20 @@ type showCaseCardType = {
   title: string;
   className: string;
   image: string;
-  alt?: string
+  alt?: string;
+  url?:string;
 };
 
 const ServiceShowCaseCard: FC<showCaseCardType> = async ({
   title,
   className,
   image,
-  alt
+  alt,
+  url
 }) => {
   return (
     <div className={`${styles.showcase_inside} ${className}`}>
-      <a href="">
+      <a href={url}>
         <span>
           <h4>{title}</h4>
           <CircleImageCard

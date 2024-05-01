@@ -34,17 +34,21 @@ export const service_showcase_data = [
   {
     title: "Lab Space",
     alt: "Wood destroying mushroom in wood fabric 100x. Image shot 04/2019. Exact date unknown.",
+    url: "/services/lab-space"
   },
   {
     title: "Build a Lab",
     alt: "Detail of raw portobello mushroom. Macro, selective focus.",
+    url: "/services/services/build-a-lab"
   },
   {
     title: "Innovation Facilitation",
     alt: "Kelp forest (Laminaria hyperborea), Atlantic Ocean, North West Norway, March.",
+    url: "/services/innovation-facilitation"
   },
   {
     title: "Office Space",
+    url: "/services/office-space"
   },
 ];
 

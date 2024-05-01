@@ -79,7 +79,7 @@ export default function Home() {
               <FlickerStats data={statistic_data} />
               <div className={styles.home_links}>
                 <LinkCards
-                  url="/contact"
+                  url="https://colabs.com.au/contact"
                   title="Join the Lab"
                   image="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/dragonfly-1.jpg"
                 />
@@ -111,6 +111,7 @@ export default function Home() {
                 title={datum.title}
                 className={`service-${formatTitleToLowerCase(datum.title)}`}
                 image={`serviceShowcase/${index + 1}.jpg`}
+                url={`https://colabs.com.au/${datum.url}`}
               />
             ))}
           </SwiperServiceShowcase>
