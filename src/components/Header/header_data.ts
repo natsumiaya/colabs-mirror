@@ -9,19 +9,19 @@ export const menuItem = [
   },
   {
     text: "About",
-    url: "/",
+    url: "https://colabs.com.au/about",
   },
   {
     text: "Our Principles",
-    url: "/",
+    url: "https://colabs.com.au/our-principles",
   },
   {
     text: "Community",
-    url: "/",
+    url: "https://colabs.com.au/community",
   },
   {
     text: "Contact",
-    url: "/",
+    url: "https://colabs.com.au/contact",
   },
 ];
 
