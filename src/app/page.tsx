@@ -10,8 +10,6 @@ import {
   statistic_data,
 } from "@/mock_data/home_data";
 
-import LeftCorner from "@/assets/icons/left-corner.svg";
-import RightCorner from "@/assets/icons/right-corner.svg";
 import ArrowIcon from "@/assets/icons/arrow";
 import ServiceShowCaseCard from "@/components/Container/ServiceShowCaseCard";
 import { formatTitleToLowerCase } from "./utils/formatter";
@@ -19,9 +17,14 @@ import CircleImageCard from "@/components/Common/CircleImageCard";
 import BlogShowCaseCard from "@/components/Container/BlogShowCaseCard";
 import SubscribeSection from "@/components/Container/SubscribeSection";
 import dynamic from "next/dynamic";
-import VideoTitle from "@/components/Container/VideoTitleSection";
 import TileContainer from "@/components/Container/TileLayout";
 
+const VideoTitle = dynamic(
+  () => import("@/components/Container/VideoTitleSection"),
+  {
+    ssr: false,
+  }
+);
 const Jarallax = dynamic(
   () => import("@/components/Common/ParallaxComponent"),
   {
@@ -187,11 +190,7 @@ export default function Home() {
                     <div className={styles.cta_button_container}>
                       <div className={styles.cta_button}>
                         <span>
-                          <ButtonArrow
-                            href={datum.link}
-                            target="_blank"
-                            referrerPolicy="no-referrer"
-                          />
+                          <ButtonArrow />
                         </span>
                       </div>
                     </div>

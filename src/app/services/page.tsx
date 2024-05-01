@@ -1,9 +1,16 @@
 import styles from "./page.module.css";
-import VideoTitle from "@/components/Container/VideoTitleSection";
 import SubscribeSection from "@/components/Container/SubscribeSection";
 import TileContainer from "@/components/Container/TileLayout";
 import { facility_data } from "@/mock_data/service_data";
 import FacilityCard from "@/components/Container/FacilityCard";
+import dynamic from "next/dynamic";
+
+const VideoTitle = dynamic(
+  () => import("@/components/Container/VideoTitleSection"),
+  {
+    ssr: false,
+  }
+);
 
 export default function Home() {
   return (

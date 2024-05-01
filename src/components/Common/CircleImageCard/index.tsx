@@ -9,7 +9,6 @@ type circleImageCardProps = {
 };
 
 const CircleImageCard: FC<circleImageCardProps> = async ({ image, className, alt }) => {
-  const img = await import(`@/assets/images/${image}`);
   return (
     <div className={`${styles.circle_image_card} ${className}`}>
       <span
@@ -30,7 +29,9 @@ const CircleImageCard: FC<circleImageCardProps> = async ({ image, className, alt
       >
         <Image
           alt={alt}
-          src={img}
+          src={`/image/${image}`}
+          width={150}
+          height={150}
           style={{
             position: "absolute",
             inset: "0px",

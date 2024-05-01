@@ -311,6 +311,10 @@
   transition: 0.3s;
 }
 
+.blog_slider_image .blog_slider {
+  height: 100%;
+}
+
 .blog_slider_details {
   background-color: #eaf1fc;
   border-radius: 20px;
@@ -390,9 +394,6 @@
   .blog_slider_details {
     border-radius: 0 0 20px 20px;
     transform: translateY(-10px);
-  }
-  .blog_slider_image .blog_slider {
-    height: 100%;
   }
   .service_showcase_content {
     padding: 0 60px 0 10px;

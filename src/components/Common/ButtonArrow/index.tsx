@@ -22,6 +22,19 @@ const ButtonArrow: FC<ArrowButtonProps> = ({
   spanTextColor = "#000",
   ...props
 }) => {
+  const renderButton = () => {
+    return (
+      <>
+        <ButtonCorner />
+        <span>
+          <div className={styles.button_arrow}>
+            <Arrow />
+          </div>
+        </span>
+        <ButtonCorner />
+      </>
+    );
+  };
   return (
     <button
       className={`${styles.button_container} ${className}`}
@@ -30,22 +43,26 @@ const ButtonArrow: FC<ArrowButtonProps> = ({
     >
       <span>
         {spanText && <span style={{ color: spanTextColor }}>{spanText}</span>}
-        <Link
-          href={href}
-          className={`${type === "light" ? styles.button_light : ""} ${
-            styles.arrow_container
-          }`}
-          title={title}
-          {...props}
-        >
-          <ButtonCorner />
-          <span>
-            <div className={styles.button_arrow}>
-              <Arrow />
-            </div>
-          </span>
-          <ButtonCorner />
-        </Link>
+        {href ? (
+          <Link
+            href={href}
+            className={`${type === "light" ? styles.button_light : ""} ${
+              styles.arrow_container
+            }`}
+            title={title}
+            {...props}
+          >
+            {renderButton()}
+          </Link>
+        ) : (
+          <div
+            className={`${type === "light" ? styles.button_light : ""} ${
+              styles.arrow_container
+            }`}
+          >
+            {renderButton()}
+          </div>
+        )}
       </span>
     </button>
   );

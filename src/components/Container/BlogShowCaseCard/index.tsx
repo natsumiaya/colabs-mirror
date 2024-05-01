@@ -67,11 +67,7 @@ const BlogShowCaseCard: FC<blogPost> = ({
               />
             </span>
             <div className={styles.blog_tile_button}>
-              <ButtonArrow
-                href={url}
-                referrerPolicy="no-referrer"
-                target="_blank"
-              />
+              <ButtonArrow />
             </div>
             <div
               className={`${
