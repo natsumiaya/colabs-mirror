@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56" fill="none">
+  <path d="M56 28C56 35.4261 53.05 42.548 47.799 47.799C42.548 53.05 35.4261 56 28 56C20.5739 56 13.452 53.05 8.201 47.799C2.94999 42.548 0 35.4261 0 28C0 20.5739 2.94999 13.452 8.201 8.20099C13.452 2.94997 20.5739 0 28 0C35.4261 0 42.548 2.94997 47.799 8.20099C53.05 13.452 56 20.5739 56 28Z" fill="#D9DB4D"></path>
+  <path d="M47.4493 31.9399C46.5367 36.4179 44.1054 40.4431 40.5668 43.3349C37.0281 46.2267 32.5993 47.8075 28.0293 47.8099" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M32.2893 52.0598L28.0293 47.8098L32.2893 43.5598" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M24.0202 47.41C19.5432 46.5009 15.5183 44.0717 12.6277 40.5342C9.73714 36.9966 8.15878 32.5683 8.16016 28" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M3.91016 32.25L8.16016 28L12.4102 32.25" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M8.55078 24.0599C9.45956 19.582 11.8884 15.5559 15.4257 12.6636C18.9631 9.77141 23.3915 8.19092 27.9608 8.18994" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M23.7109 3.93994L27.9709 8.18994L23.7109 12.4399" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M31.9707 8.57983C36.4486 9.49244 40.4739 11.9237 43.3657 15.4623C46.2575 19.001 47.8383 23.4299 47.8407 27.9998" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M52.0898 23.75L47.8398 28L43.5898 23.75" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+  <path d="M29.9506 30.13C31.2106 31.3 32.9506 32.51 34.5906 32.51C35.7867 32.51 36.9339 32.0348 37.7797 31.189C38.6255 30.3432 39.1006 29.1961 39.1006 28C39.1006 26.8039 38.6255 25.6568 37.7797 24.811C36.9339 23.9652 35.7867 23.49 34.5906 23.49C31.2706 23.49 28.0006 28 28.0006 28C28.0006 28 24.6206 32.51 21.4106 32.51C20.8175 32.5113 20.23 32.3956 19.6817 32.1696C19.1333 31.9435 18.635 31.6115 18.2151 31.1926C17.7953 30.7737 17.4622 30.2761 17.2349 29.7282C17.0076 29.1804 16.8906 28.5931 16.8906 28C16.8906 27.4069 17.0076 26.8196 17.2349 26.2718C17.4622 25.724 17.7953 25.2264 18.2151 24.8074C18.635 24.3885 19.1333 24.0565 19.6817 23.8305C20.23 23.6044 20.8175 23.4887 21.4106 23.49C23.1029 23.6679 24.6784 24.4362 25.8606 25.66" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

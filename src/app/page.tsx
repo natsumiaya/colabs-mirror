@@ -19,10 +19,15 @@ import CircleImageCard from "@/components/Common/CircleImageCard";
 import BlogShowCaseCard from "@/components/Container/BlogShowCaseCard";
 import SubscribeSection from "@/components/Container/SubscribeSection";
 import dynamic from "next/dynamic";
+import VideoTitle from "@/components/Container/VideoTitleSection";
+import TileContainer from "@/components/Container/TileLayout";
 
-const Jarallax = dynamic(() => import("@/components/Common/ParallaxComponent"), {
-  ssr: false,
-});
+const Jarallax = dynamic(
+  () => import("@/components/Common/ParallaxComponent"),
+  {
+    ssr: false,
+  }
+);
 const BlogContentSlider = dynamic(
   () => import("@/components/Container/BlogContentSlider"),
   {
@@ -41,12 +46,9 @@ const CommunitySummaryCard = dynamic(
     ssr: false,
   }
 );
-const LinkCards = dynamic(
-  () => import("@/components/Common/LinkCards"),
-  {
-    ssr: false,
-  }
-);
+const LinkCards = dynamic(() => import("@/components/Common/LinkCards"), {
+  ssr: false,
+});
 const SwiperServiceShowcase = dynamic(
   () => import("@/components/Container/SwiperServiceShowcase"),
   {
@@ -65,26 +67,11 @@ export default function Home() {
       <section className={styles.main_section}>
         <div className="container">
           <div className={styles.main_inner}>
-            <div className={styles.main_content}>
-              <video
-                playsInline
-                autoPlay
-                muted
-                loop
-                src="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/colabs-hero.mp4"
-              ></video>
-              <div className={styles.main_title}>
-                <LeftCorner />
-                <h1>
-                  Making
-                  <br /> space for transformative innovation
-                </h1>
-                <div>
-                  <ButtonArrow type="light" />
-                </div>
-                <RightCorner />
-              </div>
-            </div>
+            <VideoTitle
+              video="https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/colabs-hero.mp4"
+              title="Making
+            <br /> space for transformative innovation"
+            />
             <div className={styles.details_container}>
               <FlickerStats data={statistic_data} />
               <div className={styles.home_links}>
@@ -244,23 +231,18 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.blog_showcase_container}>
-        <div className={`container narrow ${styles.blog_showcase}`}>
-          <div className={styles.blog_showcase_intro}>
-            <div className="pill">Community</div>
-          </div>
-          <div className={styles.blog_showcase_posts}>
-            {blog_data.slice(0, 3).map((data, index) => (
-              <BlogShowCaseCard
-                key={index}
-                title={data.title}
-                description={data.description}
-                tag={data.tag}
-                image={data.image}
-                url={data.uri}
-              />
-            ))}
-          </div>
-        </div>
+        <TileContainer category="Community">
+          {blog_data.slice(0, 3).map((data, index) => (
+            <BlogShowCaseCard
+              key={index}
+              title={data.title}
+              description={data.description}
+              tag={data.tag}
+              image={data.image}
+              url={data.uri}
+            />
+          ))}
+        </TileContainer>
       </section>
       <SubscribeSection image="https://colabs.yourcreative.com.au/wp-content/uploads/2024/03/CoLabs-IWD-22-scaled-e1711597962490.jpg" />
     </main>

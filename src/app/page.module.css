@@ -11,78 +11,12 @@
   display: flex;
   justify-content: space-between;
 }
-
-.main_content {
-  width: 100%;
-  height: 100%;
-  margin: 0 10px 0 0;
-  background-color: #bed2f5;
-  border-radius: 30px 30px 30px 0;
-  overflow: hidden;
-  opacity: 1;
-  transition: 0.3s;
-}
-
-.main_content > video {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: 30px 30px 30px 0;
-  overflow: hidden;
-  z-index: 0;
-}
-
-.main_title {
-  max-width: 50%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #f9f8f6;
-  padding: 20px 20px 0 0;
-  border-radius: 0 30px 0 0;
-}
-
-.main_title > button {
-  display: inline-flex;
-  margin: 20px 0 0;
-  opacity: 1;
-  transition: 0.6s;
-  transition-delay: 0.4s;
-  transform: translateX(0);
-}
-
-.main_title div[class*="arrow_container"] {
-  border-radius: 0;
-}
-
-.main_title > svg {
-  display: block;
-  width: 30px;
-  height: auto;
-  position: absolute;
-  top: -30px;
-  left: 0;
-  transform: rotate(-90deg);
-}
-
 .details_container {
   width: 320px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-.main_title > svg:last-of-type {
-  top: auto;
-  bottom: 0;
-  left: auto;
-  right: -30px;
-}
-
 .button_scroll {
   justify-content: center;
   align-items: center;
@@ -403,24 +337,6 @@
   max-width: 860px;
 }
 
-.blog_showcase {
-  display: flex;
-  justify-content: space-between;
-}
-
-.blog_showcase_intro {
-  width: 200px;
-  flex-shrink: 0;
-  transition: 0.3s;
-}
-
-.blog_showcase_posts {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  gap: 10px;
-}
 
 @media (max-width: 1024px) {
   .service_showcase_content {
@@ -428,9 +344,6 @@
   }
   .blog_slider_details {
     grid-column: span 2;
-  }
-  .blog_showcase {
-    flex-direction: column;
   }
 }
 
@@ -440,18 +353,7 @@
     flex-direction: column;
     margin-top: 80px;
   }
-  .main_content {
-    width: 100%;
-    height: 500px;
-    border-radius: 30px 30px 30px 0;
-    transform: translateY(-10px);
-  }
-  .main_title {
-    max-width: 300px;
-    padding: 20px 20px 0 0;
-    border-radius: 0 30px 0 0;
-  }
-  .main_title div {
+  .main_inner > div > div > h1+div {
     display: none;
   }
   .home_links {
@@ -491,14 +393,6 @@
   }
   .blog_slider_image .blog_slider {
     height: 100%;
-  }
-  .blog_showcase_posts {
-    grid-template-columns: repeat(1, 1fr);
-    margin: 20px 0 0;
-    gap: 30px;
-  }
-  .blog_showcase_intro {
-    transform: translateY(-10px) !important;
   }
   .service_showcase_content {
     padding: 0 60px 0 10px;

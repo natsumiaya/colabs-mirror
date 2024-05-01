@@ -1,0 +1,34 @@
+.showcase {
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase_intro {
+  width: 200px;
+  flex-shrink: 0;
+  transition: 0.3s;
+}
+
+.showcase_posts {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .showcase {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .showcase_posts {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 20px 0 0;
+    gap: 30px;
+  }
+  .showcase_intro {
+    transform: translateY(-10px) !important;
+  }
+}
