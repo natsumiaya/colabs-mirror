@@ -26,6 +26,10 @@
   margin: 30px 0 0;
 }
 
+.service_cards_section {
+  overflow: hidden;
+}
+
 @media (max-width: 500px) {
   .service_main_section {
     margin-bottom: 60px;

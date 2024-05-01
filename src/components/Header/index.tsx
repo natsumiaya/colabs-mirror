@@ -7,10 +7,13 @@ import { SvgWrapper } from "@/components/Common/IconWrapper";
 
 import Corner from "@/assets/icons/right-corner.svg";
 import ColabsIcon from "@/assets/icons/colabs-icon-full.svg";
+import { usePathname } from "next/navigation";
 
 const Header: FC = () => {
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
+  const pathname = usePathname();
 
+  console.log(pathname);
   return (
     <header
       className={`${styles.header} ${
@@ -40,7 +43,7 @@ const Header: FC = () => {
             {menuItem.map((item, index) => (
               <li key={`${item.text}-${index}-menu-item`}>
                 <div>
-                  <a href={item.url}>
+                  <a href={item.url} className={item.url === pathname ? 'active' : ''}>
                     <span>{item.text}</span>
                   </a>
                 </div>

@@ -104,7 +104,7 @@
   display: none;
 }
 
-.menu > ul li a[class*="active"] {
+.menu > ul li div a[class*="active"] {
   font-weight: 600;
 }
 
@@ -220,7 +220,7 @@ li.header_social svg {
   .menu > ul li:first-of-type {
     display: block;
   }
-  .menu > ul li:first-child a[class*="active"] {
+  .menu > ul li:first-child div a[class*="active"] {
     font-weight: 400;
     color: #000;
   }

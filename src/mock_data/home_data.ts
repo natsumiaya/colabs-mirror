@@ -34,21 +34,34 @@ export const service_showcase_data = [
   {
     title: "Lab Space",
     alt: "Wood destroying mushroom in wood fabric 100x. Image shot 04/2019. Exact date unknown.",
-    url: "/services/lab-space"
+    url: "/services/lab-space",
+    description:
+      "Access fully equiped wet and dry lab spaces, essential equipment and amenities.",
+    description_tagline: "Designed to foster innovation and collaboration.",
   },
   {
     title: "Build a Lab",
     alt: "Detail of raw portobello mushroom. Macro, selective focus.",
-    url: "/services/services/build-a-lab"
+    url: "/services/services/build-a-lab",
+    description:
+      "Building and designing labs that are tailored and fit-for-purpose Australia wide.",
+    description_tagline: "Take your project from zero to one.",
   },
   {
     title: "Innovation Facilitation",
     alt: "Kelp forest (Laminaria hyperborea), Atlantic Ocean, North West Norway, March.",
-    url: "/services/innovation-facilitation"
+    url: "/services/innovation-facilitation",
+    description:
+      "Offering expertise across various stages of the startup lifecycle.",
+    description_tagline:
+      "Refine your idea, access marketing support, and join a collaborative community.",
   },
   {
     title: "Office Space",
-    url: "/services/office-space"
+    url: "/services/office-space",
+    description: "Impact-oriented co-working spaces.",
+    description_tagline:
+      "Work towards a future where social and environmental flourishing can co-exist.",
   },
 ];
 
@@ -80,7 +93,8 @@ export const blog_data = [
       "‘Three Horizons thinking’ is a useful method formaking sense of and facilitating transformative innovation.",
     uri: "/community/what-is-transformative-innovation",
     alt: "three horizons of innovation and culture change",
-    image: "https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/3-horizons-.png"
+    image:
+      "https://colabs.yourcreative.com.au/wp-content/uploads/2023/07/3-horizons-.png",
   },
   {
     title: "Living Systems Thinking: Exploring the Integral Patterns of Life",
@@ -89,7 +103,8 @@ export const blog_data = [
       "At the cutting edge of science, a new way of making sense of the world is beginning to emerge. One that moves from parts to wholes,  from quantities to qualities, from measuring to mapping and from absolute certainty to approximate knowledge.",
     uri: "/community/living-systems-thinking-exploring-the-integral-patterns-of-life",
     alt: "",
-    image: "https://colabs.yourcreative.com.au/wp-content/uploads/2023/06/16.png"
+    image:
+      "https://colabs.yourcreative.com.au/wp-content/uploads/2023/06/16.png",
   },
   {
     title: "Why We Need to Rethink Our Worldview",
@@ -97,7 +112,8 @@ export const blog_data = [
     description:
       "In today's rapidly changing world, our dominant worldview is being challenged by the complexities and interconnectedness of global issues.",
     uri: "/community/why-we-need-to-rethink-our-worldview",
-    image: "https://colabs.yourcreative.com.au/wp-content/uploads/2023/05/blogpost_worldview.jpg"
+    image:
+      "https://colabs.yourcreative.com.au/wp-content/uploads/2023/05/blogpost_worldview.jpg",
   },
   {
     title: "A Field Guide to Transdisciplinary Innovation",
@@ -105,6 +121,7 @@ export const blog_data = [
     description:
       "Transdisciplinary thinking is a consilience-based approach integrates knowledge, methods, and insights from different disciplines to address complex problems and generate comprehensive solutions.",
     uri: "/community/a-field-guide-to-transdisciplinary-innovation",
-    image: "https://colabs.yourcreative.com.au/wp-content/uploads/2023/06/transdisc-shrunk.png"
+    image:
+      "https://colabs.yourcreative.com.au/wp-content/uploads/2023/06/transdisc-shrunk.png",
   },
 ];

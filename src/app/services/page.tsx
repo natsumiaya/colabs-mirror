@@ -4,6 +4,8 @@ import TileContainer from "@/components/Container/TileLayout";
 import { facility_data } from "@/mock_data/service_data";
 import FacilityCard from "@/components/Container/FacilityCard";
 import dynamic from "next/dynamic";
+import { service_showcase_data } from "@/mock_data/home_data";
+import ServiceDetailedSwiper from "@/components/Container/ServiceDetailedSwiper";
 
 const VideoTitle = dynamic(
   () => import("@/components/Container/VideoTitleSection"),
@@ -24,6 +26,9 @@ export default function Home() {
             />
           </div>
         </div>
+      </section>
+      <section className={styles.service_cards_section}>
+        <ServiceDetailedSwiper data={service_showcase_data} />
       </section>
       <section className={styles.content_section}>
         <div className="container">
