@@ -69,11 +69,11 @@
   background-color: transparent;
 }
 
-.subscribe_button > span > a {
+.subscribe_button > span > div {
   background-color: transparent;
 }
 
-.subscribe_button > span > a > svg {
+.subscribe_button > span > div > svg {
   display: none;
 }
 
